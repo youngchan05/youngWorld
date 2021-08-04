@@ -53,4 +53,26 @@
       }
     }
   }
+  &-agree {
+    .scroll-box {
+      height: 410px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: normal;
+      color: #6d6d6d;
+      overflow: auto;
+      white-space: pre-line;
+    }
+  }
+  .bottom-pop {
+    .tit {
+      display: inline-block;
+      margin-bottom:64px;
+      text-align: left;
+    }
+    .btn-group  {
+      margin-top:45px ;
+    }
+  }
 }

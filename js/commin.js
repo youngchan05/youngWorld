@@ -2,6 +2,16 @@ var utils = init();
 
 function init (){
     return {
+        certificationPop : function(){
+            $('#CertificationPop').on('click',function(){
+                $('.bottom-pop').toggleClass('active');
+            })
+        },
+        closePop : function(){
+            $('.bottom-pop .close-btn').on('click',function(){
+                $('.bottom-pop').toggleClass('active');
+            })
+        },
         hedaer : function(){
             var $selector = $('.wrapper');
             var $target = $('.header');
@@ -64,9 +74,6 @@ function init (){
 }
 
 (function(){
-    utils.hedaer();
-    utils.mobileMneu();
-    utils.mainScroll();
-    utils.popAks();
-    utils.accordion();
+    utils.certificationPop();
+    utils.closePop();
 })();
