@@ -23,6 +23,11 @@
         height:32px;
         @include bg($url:"btn/img_top_back");
     }
+    .right-back{
+      right:16px;
+      left:auto;
+      @include bg($url:"btn/img_close");
+    }
 
 }
 .fixed-bottom-btn {

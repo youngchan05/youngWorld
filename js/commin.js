@@ -64,9 +64,9 @@ function init (){
             })
         },
         accordion: function(){
-            var $selector = $('.cs-table .text-wrap .inquire');
+            var $selector = $('.accordion-wrap dt');
             $selector.on('click',function(){
-                $(this).siblings('.anwer').toggleClass('active');
+                $(this).toggleClass('active');
             })
 
         }
@@ -76,4 +76,5 @@ function init (){
 (function(){
     utils.certificationPop();
     utils.closePop();
+    utils.accordion();
 })();

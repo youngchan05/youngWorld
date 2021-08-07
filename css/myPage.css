@@ -189,37 +189,45 @@ html, body { height: 100%; }
 
 .bottom-pop.active { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.main .title-main { margin-bottom: 32px; }
+.profile-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.main .title-main p { margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #606060; }
+.profile-wrap .profile-img { position: relative; margin-right: 16px; }
 
-.main .title-main strong { font-size: 24px; line-height: 37px; font-weight: bold; font-stretch: normal; color: #000000; }
+.profile-wrap .profile-img img { width: 64px; height: 64px; border-radius: 100%; overflow: hidden; }
 
-.main .search-wrap { margin-bottom: 40px; }
+.profile-wrap .profile-img .btn-edit { position: absolute; right: 0; bottom: 0; width: 24px; height: 24px; background: url("../img/btn/btn_edit.svg") no-repeat center/auto; }
 
-.main .main-desc { margin-bottom: 16px; font-size: 18px; font-weight: bold; line-height: 24px; color: #000000; }
+.profile-wrap .info .name { font-size: 18px; font-weight: bold; line-height: 0.89; color: #303030; }
 
-.main .category-menu { margin-bottom: 42px; }
+.profile-wrap .info .address { margin-top: 7px; font-size: 14px; line-height: 1.14; color: #b0b0b0; font-weight: 300; }
 
-.main .category-menu ul { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow-x: auto; overflow-y: hidden; }
+.profile-wrap + .counting-wrap { margin-top: 16px; }
 
-.main .category-menu ul li { -webkit-box-flex: 0; -ms-flex: 0 0 64px; flex: 0 0 64px; }
+.counting-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; padding-bottom: 24px; }
 
-.main .category-menu ul li + li { margin-left: 8px; }
+.counting-wrap li { width: 33.33%; padding: 8px 0 12px 0; text-align: center; }
 
-.main .category-menu .category { display: inline-block; position: relative; width: 100%; padding-top: 72px; text-align: center; font-size: 16px; font-weight: 500; text-align: center; color: #303030; }
+.counting-wrap li span { display: block; margin-bottom: 12px; font-size: 12px; font-weight: 500; line-height: 1.33; text-align: center; color: #303030; }
 
-.main .category-menu .category img { width: 64px; height: 64px; position: absolute; left: 50%; top: 0; border-radius: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); border: 1px solid #f4f4f4; }
+.counting-wrap li strong { font-size: 24px; font-weight: bold; line-height: 0.67; text-align: center; color: #303030; }
 
-.main .today-menu { margin-bottom: 42px; }
+.counting-wrap li + li { border-left: 1px solid #e0e0e0; }
 
-.main .today-menu ul { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow-x: auto; overflow-y: hidden; }
+.counting-wrap::after { display: block; position: absolute; left: -16px; bottom: 0; width: calc(100% + 32px); height: 8px; background-color: #f4f4f4; content: ""; }
 
-.main .today-menu ul li { -webkit-box-flex: 0; -ms-flex: 0 0 120px; flex: 0 0 120px; }
+.my-link-list ul li { border-bottom: 1px solid rgba(151, 151, 151, 0.2); }
 
-.main .today-menu ul li + li { margin-left: 16px; }
+.my-link-list ul li a { display: block; width: 100%; background: url("../img/btn/btn_arrow_link.svg") no-repeat right center/auto; }
 
-.main .today-menu .menu-item { display: inline-block; position: relative; width: 100%; padding-top: 128px; font-size: 16px; font-weight: 500; text-align: center; color: #303030; }
+.my-link-list ul li span { display: inline-block; padding: 16px 0; font-size: 16px; font-weight: 500; color: #000; }
 
-.main .today-menu .menu-item img { width: 120px; height: 120px; position: absolute; left: 50%; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 8px; }
-/*# sourceMappingURL=stlye.css.map */
+.my-link-list ul .app { position: relative; }
+
+.my-link-list ul .app .version { position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); font-size: 16px; font-weight: normal; color: #808080; }
+
+.push-setting li { position: relative; padding: 16px 0; border-bottom: 1px solid rgba(151, 151, 151, 0.2); }
+
+.push-setting li span { font-size: 16px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; color: #000; }
+
+.push-setting li .range-box { position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+/*# sourceMappingURL=myPage.css.map */
