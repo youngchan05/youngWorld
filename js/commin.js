@@ -20,37 +20,50 @@ function init (){
                 $target.append('<strong>'+text+'</strong>');
             }
         },
-        mobileMneu:function(){
-            var $btn = $('.m_menu'),
-                $gnb = $('.gnb');
-            $btn.on('click',function(){
-                $(this).toggleClass('active');
-                $gnb.toggleClass('active');
-            })
-            $('.depth').on('click',function(){
-                $(this).toggleClass('on');
-            })
-        },
-        mainScroll :function(){
-            var $selector = $('.wrapper'),
-                $target = $('.header'),
-                $wrap = $('.header-wrap'),
-                $logo = $('.logo img');
-            if($selector.hasClass('main')){
+        // mobileMneu:function(){
+        //     var $btn = $('.m_menu'),
+        //         $gnb = $('.gnb');
+        //     $btn.on('click',function(){
+        //         $(this).toggleClass('active');
+        //         $gnb.toggleClass('active');
+        //     })
+        //     $('.depth').on('click',function(){
+        //         $(this).toggleClass('on');
+        //     })
+        // },
+        categoryScroll :function(){
+            var $selector = $('.category-fix'),
+                $header = $('.fixed-top-btn'),
+                $wrap = $('.category-section'),
+                $text = $('.search-tit').height() ? $('.search-tit').height()  : 0 ,
+                $top = $selector.offset().top,
+                $height = $selector.height()  + $header.height() - $text;
+                console.log($height );
                 $(window).scroll(function(){
-                    console.log($wrap)
                     $scrollTop = $(this).scrollTop();
-                    if($scrollTop > $target.height()){
-                        $target.addClass('active');
-                        $wrap.addClass('active');
-                        $logo.attr('src','../img/logo/logo_black.png');
-                    }else{
-                        $target.removeClass('active')
-                        $wrap.removeClass('active')
-                        $logo.attr('src','../img/logo/logo_white.png');
+                    if($scrollTop >$top - 50){
+                        if($wrap.hasClass('fix')) return;
+                        $wrap.addClass('fix');
+                        $wrap.css({
+                            paddingTop:$height,
+                        })
+                    }else {
+                        $wrap.removeClass('fix');
+                        $wrap.css({
+                            paddingTop:$header.height(),
+                        })
                     }
                 })
-            }
+        },
+        categoryTab : function(){
+            $tab = $('.category-tab button'),
+            $cont = $('.category-cont'),
+            $idx = 0;
+            $tab.on('click', function(){
+                $idx = $(this).index();
+                $(this).addClass('active').siblings().removeClass('active');
+                $cont.eq($idx).addClass('active').siblings().removeClass('active');
+            })
         },
         popAks : function(){
             var $selector = $('.btn_ask'),
@@ -77,4 +90,6 @@ function init (){
     utils.certificationPop();
     utils.closePop();
     utils.accordion();
+    utils.categoryScroll();
+    utils.categoryTab();
 })();

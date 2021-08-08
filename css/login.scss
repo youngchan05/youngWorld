@@ -51,7 +51,7 @@
         seller: #e01c67,
         officer: #f4b322,
         Official: #139e89
-    );
+      );
       @each $order, $color in $colors-data {
         &.#{$order}{
           label {
