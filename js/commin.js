@@ -7,6 +7,27 @@ function init (){
                 $('.bottom-pop').toggleClass('active');
             })
         },
+        locationPop: function(){
+            var $selector = $('.station-map .marker'),
+                $stationMap = $('.station'),
+                $pop = $('.bottom-pop'),
+                $stationName = $pop.find('.station-name'),
+                $close = $('.close-btn');
+            $selector.on('click',function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                $stationName.text($(this).find('span').text());
+                $stationMap.css({
+                    paddingBottom:$pop.height(),
+                })
+                $pop.addClass('active');
+            })
+            $close.on('click',function(){
+                $selector.removeClass('active');
+                $stationMap.css({
+                    paddingBottom:0,
+                })
+            })
+        },
         closePop : function(){
             $('.bottom-pop .close-btn').on('click',function(){
                 $('.bottom-pop').toggleClass('active');
@@ -87,4 +108,5 @@ function init (){
     utils.categoryTab();
     utils.dropList();
     utils.categoryScroll();
+    utils.locationPop();
 })();

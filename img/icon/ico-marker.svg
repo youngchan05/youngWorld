@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="42px" viewBox="0 0 24 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AA3C54DB-62AF-42DA-BA1A-7A2B9B1D931C</title>
+    <g id="영월군_AOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="사용자_UI" transform="translate(-389.000000, -303.000000)">
+            <g id="spot/nomal" transform="translate(389.000000, 304.000000)">
+                <g id="Group" transform="translate(0.000000, 16.500000)">
+                    <circle id="Oval" stroke="#004097" fill-opacity="0.5" fill="#FFFFFF" cx="12" cy="12" r="11.5"></circle>
+                    <circle id="Oval" stroke="#FFFFFF" fill="#004097" cx="12" cy="12" r="5.5"></circle>
+                </g>
+                <line x1="12.5" y1="0" x2="12.5" y2="17" id="Line" stroke="#004097" stroke-linecap="square" stroke-dasharray="1,2"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="75px" viewBox="0 0 48 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BD71A549-0613-4598-94F3-3B7C65DB4993</title>
+    <g id="영월군_AOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="사용자_UI" transform="translate(-433.000000, -303.000000)">
+            <g id="spot/push" transform="translate(433.000000, 304.000000)">
+                <path d="M24,16.5 C37.1777265,16.6826281 47.8156692,27.2223061 48,40.2783075 C48,54.9868892 29.9657143,69.2199046 24,73.5 C18.0342857,69.2199046 0,54.9868892 0,40.2783075 C0.184330787,27.2223061 10.8222735,16.6826281 24,16.5 Z M24,28.3891538 C19.0294373,28.3891538 15,32.3813703 15,37.3060191 C15,42.2306678 19.0294373,46.2228844 24,46.2228844 C28.9705627,46.2228844 33,42.2306678 33,37.3060191 C33,32.3813703 28.9705627,28.3891538 24,28.3891538 Z" id="Combined-Shape" fill="#004097" fill-rule="nonzero"></path>
+                <line x1="24.5" y1="0" x2="24.5" y2="17" id="Line-Copy" stroke="#004097" stroke-linecap="square" stroke-dasharray="1,2"></line>
+            </g>
+        </g>
+    </g>
+</svg>

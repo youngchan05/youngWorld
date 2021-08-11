@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>156A7237-6CDD-4B31-B1A0-85A1EF72BD47</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="영월군_AOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="사용자_UI" transform="translate(-501.000000, -304.000000)">
+            <g id="a_location-copy" transform="translate(501.000000, 304.000000)">
+                <circle id="Oval-Copy-3" fill="#F9BE00" cx="24" cy="24" r="24"></circle>
+                <g filter="url(#filter-1)" id="authenticate_my_town">
+                    <g transform="translate(6.000000, 6.000000)">
+                        <g id="현재위치" transform="translate(4.500000, 4.500000)" stroke="#000000" stroke-width="1.25">
+                            <path d="M13.5,1.125 C6.66547622,1.125 1.125,6.66547622 1.125,13.5 C1.125,20.3345238 6.66547622,25.875 13.5,25.875 C20.3345238,25.875 25.875,20.3345238 25.875,13.5 C25.875,6.66547622 20.3345238,1.125 13.5,1.125 Z" id="Path" fill-rule="nonzero"></path>
+                            <path d="M13.5,10.625 C14.2939093,10.625 15.0126593,10.9467953 15.532932,11.467068 C16.0532047,11.9873407 16.375,12.7060907 16.375,13.5 C16.375,14.2939093 16.0532047,15.0126593 15.532932,15.532932 C15.0126593,16.0532047 14.2939093,16.375 13.5,16.375 C12.7060907,16.375 11.9873407,16.0532047 11.467068,15.532932 C10.9467953,15.0126593 10.625,14.2939093 10.625,13.5 C10.625,12.7060907 10.9467953,11.9873407 11.467068,11.467068 C11.9873407,10.9467953 12.7060907,10.625 13.5,10.625 Z" id="Path" fill-rule="nonzero"></path>
+                            <line x1="0" y1="13.5" x2="4.5" y2="13.5" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="22.5" y1="13.5" x2="27" y2="13.5" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="13.5" y1="0" x2="13.5" y2="4.5" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="13.5" y1="22.5" x2="13.5" y2="27" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
