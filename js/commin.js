@@ -20,25 +20,14 @@ function init (){
                 $target.append('<strong>'+text+'</strong>');
             }
         },
-        // mobileMneu:function(){
-        //     var $btn = $('.m_menu'),
-        //         $gnb = $('.gnb');
-        //     $btn.on('click',function(){
-        //         $(this).toggleClass('active');
-        //         $gnb.toggleClass('active');
-        //     })
-        //     $('.depth').on('click',function(){
-        //         $(this).toggleClass('on');
-        //     })
-        // },
         categoryScroll :function(){
+            if($('.category-fix').length === 0) return;
             var $selector = $('.category-fix'),
                 $header = $('.fixed-top-btn'),
                 $wrap = $('.category-section'),
                 $text = $('.search-tit').height() ? $('.search-tit').height()  : 0 ,
                 $top = $selector.offset().top,
                 $height = $selector.height()  + $header.height() - $text;
-                console.log($height );
                 $(window).scroll(function(){
                     $scrollTop = $(this).scrollTop();
                     if($scrollTop >$top - 50){
@@ -81,8 +70,13 @@ function init (){
             $selector.on('click',function(){
                 $(this).toggleClass('active');
             })
-
-        }
+        },
+        dropList: function(){
+            var $selector = $('.drop-list-box button');
+            $selector.on('click',function(){
+                $(this).parent().toggleClass('active');
+            })
+        },
     }
 }
 
@@ -90,6 +84,7 @@ function init (){
     utils.certificationPop();
     utils.closePop();
     utils.accordion();
-    utils.categoryScroll();
     utils.categoryTab();
+    utils.dropList();
+    utils.categoryScroll();
 })();

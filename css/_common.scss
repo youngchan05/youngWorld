@@ -447,6 +447,7 @@
   border-top:1px solid rgba(151, 151, 151, 0.3);
   li {
     display: flex;
+    flex-wrap: wrap;
     position:relative;
     min-height:100px;
     padding: 10px 16px;
@@ -463,6 +464,7 @@
     .text-wrap {
       display: flex;
       flex-direction: column;
+      flex: 1 1 auto;
       .category {
         margin-bottom:8px;
         font-size: 10px;
@@ -499,6 +501,14 @@
           color: #303030;
         }
       }
+    }
+    .cancel-btn {
+      position: absolute;
+      right:16px;
+      top:16px;
+      width:16px;
+      height:16px;
+      @include bg('btn/btn_cancel');
     }
     .btn-group {
       button {
@@ -655,6 +665,70 @@
       .btn {
         color:$color
       }
+    }
+  }
+}
+.drop-list-box {
+  width: 100%;
+  margin-top:10px;
+  border-radius: 8px;
+  padding:0 16px;
+  border: solid 1px #e0e0e0;
+  background-color: rgba(224, 224, 224, 0.2);
+  button {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    color: #808080;
+    span {
+      position: relative;
+      padding-right:24px;
+      &::after {
+        display: block;
+        position: absolute;
+        right:0;
+        top:0;
+        width:20px;
+        height:20px;
+        @include bg('btn/btn_drop_arrow' ,$pos: right center);
+        content: '';
+        transform: rotate(0);
+      }
+    }
+  }
+  .list-box {
+    display:none;
+    padding:8px 0;
+    border-top:1px solid #e0e0e0;
+  }
+  .list-item {
+    display:flex;
+    span {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: normal;
+      color: #747474;
+       + span {
+         margin-left: auto;
+       }
+    }
+    + .list-item {
+      margin-top:8px;
+    }
+  }
+  &.active {
+    button {
+      span {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .list-box  {
+      display:block;
     }
   }
 }
