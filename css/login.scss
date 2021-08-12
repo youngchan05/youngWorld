@@ -28,6 +28,11 @@
     > span {
       display: inline-block;
       position: relative;
+      &.user {
+        label {
+          width: 88px;
+        }
+      }
       input{
         position: absolute;
         left:0;

@@ -5,6 +5,7 @@
 //main
 .main {
     .title-main {
+        padding-top:16px;
         margin-bottom:32px;
         p {
             margin-bottom:8px;
@@ -258,5 +259,101 @@
         height: auto;
         bottom:0;
         top:auto;
+    }
+}
+
+//seller
+.seller.main {
+    .title-main {
+        margin-bottom:64px;
+    }
+    .order-status {
+        margin-bottom:40px;
+        .counting-wrap {
+            padding:8px 0;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border: solid 1px #e0e0e0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    .guide-wrap {
+        .guide-text {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 500;
+            color: #303030;
+        }
+    }
+}
+.size-section {
+    .sub-tit {
+        margin-bottom:73px;
+    }
+    .size-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .box-img {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 82px;
+        }
+        .numbering {
+            position: absolute;
+            &.box-w {
+                left:32px;
+                bottom:13px;
+            }
+            &.box-d {
+                right:40px;
+                bottom:23px;
+            }
+            &.box-h {
+                left:82px;
+                bottom:45px;
+            }
+        }
+        .box-tit {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+        }
+        .desc {
+            margin-top:16px;
+            font-size: 16px;
+            text-align: center;
+            color: #808080;
+        }
+    }
+    .number-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top:40px;
+        p {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #808080;
+        }
+        .numbering {
+            margin-right:8px;
+        }
+    }
+}
+.category-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height:100%;
+    .input-box-wrap {
+        padding-left: 0;
+    }
+    .add-input {
+        margin-top:auto;
     }
 }

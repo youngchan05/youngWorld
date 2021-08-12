@@ -2,12 +2,15 @@ html,body {
   height:100%;
 }
 .wrapper {
-    padding:76px 16px 90px 16px;
+    padding:60px 16px 90px 16px;
     position: relative;
     min-height:100%;
     overflow: hidden;
     &.section-type01 {
       padding-top:52px;
+    }
+    &.h_full {
+      height:100%;
     }
 }
 .cart-section {
@@ -123,6 +126,14 @@ html,body {
         + .btn {
           margin-left:8px;
         }
+      }
+      .edit,.result {
+        background: none;
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: bold;
+        text-align: center;
+        color: #009c84;
       }
     }
 }
