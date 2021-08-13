@@ -35,11 +35,15 @@
 
 .input-box:disabled { color: #747474; }
 
+.input-box.active { border-color: #004097; color: #004097; font-weight: bold; }
+
 .input-set strong { display: inline-block; margin-bottom: 8px; font-size: 16px; font-weight: 700; line-height: 24px; color: #000; }
 
 .input-set .view-input { position: relative; }
 
 .input-set .view-input button { position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); color: #004097; font-size: 12px; line-height: 14px; font-weight: 700; }
+
+.input-set .view-input button.re-select { right: 16px; color: #009c84; }
 
 .input-set .view-input .seconds { position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); color: #4772af; font-size: 14px; line-height: 20px; font-weight: 700; }
 
@@ -213,9 +217,9 @@
 
 .counting-util .count + button { border-radius: 0 8px 8px 0; }
 
-.calendar-list { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; padding: 0 20px; left: -16px; width: calc(100% + 32px); padding-bottom: 16px; border-bottom: 8px solid #f4f4f4; }
+.calendar-list { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; padding: 0 20px; left: -16px; width: calc(100% + 32px); -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-bottom: 16px; border-bottom: 8px solid #f4f4f4; }
 
-.calendar-list button span { display: inline-block; margin-bottom: 6px; font-size: 12px; line-height: 12px; font-weight: 500; text-align: center; color: #979797; }
+.calendar-list button span { display: inline-block; width: 100%; margin-bottom: 6px; font-size: 12px; line-height: 12px; font-weight: 500; text-align: center; color: #979797; }
 
 .calendar-list button strong { display: inline-block; width: 40px; height: 40px; line-height: 40px; font-size: 20px; font-weight: 500; text-align: center; color: #000; border-radius: 100%; }
 
@@ -233,6 +237,14 @@
 
 .order-list .btnChange { margin-top: 16px; }
 
+.order-list .thumb { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.order-list .thumb .thumb-img { width: 100px; height: 100px; padding-top: 8px; }
+
+.order-list .thumb .thumb-img img { width: 100%; height: 100%; border-radius: 8px; -o-object-fit: cover; object-fit: cover; }
+
+.order-list .thumb .order-info { margin-left: 16px; -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; }
+
 .order-list .order-info { margin-top: 8px; }
 
 .order-list .order-info li { display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 12px; font-weight: 500; line-height: 1.67; color: #747474; }
@@ -242,6 +254,14 @@
 .order-list .order-info li + li { margin-top: 8px; }
 
 .order-list .order-info li.price p { color: #004097; font-weight: bold; }
+
+.order-list .order-info li.time p { font-size: 12px; font-weight: bold; font-style: normal; line-height: 1.67; color: #009c84; }
+
+.order-list .btn-group { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 16px; }
+
+.order-list .btn-group button { margin: 0; }
+
+.order-list .btn-group button + button { margin-left: 8px; }
 
 .order-list.result .status { background-color: #e40065; }
 
@@ -429,6 +449,8 @@ html, body { height: 100%; }
 
 .bottom-pop .item-img img { position: absolute; top: -160px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 240px; height: 240px; border-radius: 16px; -o-object-fit: cover; object-fit: cover; background-color: #d8d8d8; }
 
+.bottom-pop .reject { margin-bottom: 45px; }
+
 .bottom-pop .price { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 18px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .bottom-pop .price span { font-size: 14px; font-weight: 500; line-height: 16px; color: #c0c0c0; }
@@ -454,6 +476,8 @@ html, body { height: 100%; }
 .bottom-pop .btn-group.pay .price strong { margin-left: auto; font-size: 16px; font-weight: bold; color: #004097; }
 
 .bottom-pop .time-info { display: inline-block; width: 100%; margin: 26px 0; text-align: center; font-size: 14px; font-weight: 500; line-height: 16px; color: #009c84; }
+
+.bottom-pop .input-box-wrap + .btn-group { margin-top: 16px; }
 
 .bottom-pop .address-wrap { margin-bottom: 24px; }
 

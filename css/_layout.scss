@@ -250,6 +250,9 @@ html,body {
       }
 
     }
+    .reject {
+      margin-bottom: 45px;
+    }
     .price {
       display:flex;
       margin-bottom: 18px;
@@ -342,6 +345,9 @@ html,body {
       font-weight: 500;
       line-height: 16px;
       color: #009c84;
+    }
+    .input-box-wrap + .btn-group {
+      margin-top:16px;
     }
     .address-wrap {
       margin-bottom:24px;

@@ -9,23 +9,18 @@ function init (){
         },
         locationPop: function(){
             var $selector = $('.station-map .marker'),
-                $stationMap = $('.station'),
-                $pop = $('.bottom-pop'),
+                $pop = $('.station-pop'),
                 $stationName = $pop.find('.station-name'),
-                $close = $('.close-btn');
+                $close = $('.close-station');
             $selector.on('click',function(){
+                if($(this).hasClass('disabled')) return;
                 $(this).addClass('active').siblings().removeClass('active');
                 $stationName.text($(this).find('span').text());
-                $stationMap.css({
-                    paddingBottom:$pop.height(),
-                })
                 $pop.addClass('active');
             })
             $close.on('click',function(){
                 $selector.removeClass('active');
-                $stationMap.css({
-                    paddingBottom:0,
-                })
+                $pop.removeClass('active');
             })
         },
         closePop : function(){
