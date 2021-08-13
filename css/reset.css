@@ -59,6 +59,10 @@ input {
   background: transparent;
   outline: none;
 }
+input {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+ }
 
 
 
