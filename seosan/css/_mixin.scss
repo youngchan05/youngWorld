@@ -1,0 +1,24 @@
+//color
+$white: #fff;
+$block:#000;
+$blue :#004097;
+$orange : #ef7622;
+/*layout*/
+
+@mixin bg ($url:url ,$repeat :no-repeat ,$pos:center, $size:auto, $type:svg){
+  background:url('../img/#{$url}.#{$type}') $repeat $pos / $size;
+}
+
+
+@mixin ellipse($line:1){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: $line;
+  @if($line > 1){
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+  }
+}

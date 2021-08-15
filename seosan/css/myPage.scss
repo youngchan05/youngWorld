@@ -1,0 +1,117 @@
+@import 'mixin';
+@import 'common';
+@import 'layout';
+
+.store-img {
+  margin-bottom:24px;
+  text-align: center;
+  img {
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    background-color: #e6e6e6;
+  }
+}
+.profile-wrap {
+  display: flex;
+  align-items: center;
+  .profile-img{
+    position: relative;
+    margin-right: 16px;
+    img {
+      width:64px;
+      height:64px;
+      border-radius: 100%;
+      overflow: hidden;
+    }
+    .btn-edit {
+      position: absolute;
+      right:0;
+      bottom:0;
+      width: 24px;
+      height: 24px;
+      @include bg('btn/btn_edit');
+    }
+  }
+  .info {
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 0.89;
+      color: #303030;
+    }
+    .address {
+      margin-top:7px;
+      font-size: 14px;
+      line-height: 1.14;
+      color: #b0b0b0;
+      font-weight: 300;
+    }
+  }
+  + .counting-wrap {
+    margin-top:16px;
+  }
+}
+.my-link-list {
+  ul {
+    li {
+      border-bottom:1px solid rgba($color: #979797, $alpha: .2);
+      a {
+        display: block;
+        width: 100%;
+        @include bg('btn/btn_arrow_link' ,$pos:right center);
+      }
+      span {
+        display: inline-block;
+        padding:16px 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+    .app {
+      position: relative;
+      .version {
+        position: absolute;
+        right:0;
+        top:50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        font-weight: normal;
+        color: #808080;
+      }
+    }
+  }
+}
+
+.push-setting {
+  li {
+      position: relative;
+      padding: 16px 0;
+      border-bottom:1px solid rgba($color: #979797, $alpha: .2);
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000;
+      }
+      .range-box {
+        position: absolute;
+        right: 0;
+        top:50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .inquiry-wrap {
+    .input-box {
+        margin-bottom: 8px;
+    }
+    textarea {
+      height: 240px;
+      padding:10px 8px;
+    }
+}
